@@ -206,20 +206,25 @@
                                 <a href="https://codepen.io/GingerNinjaNicko/" target="_blank" rel="noopener" aria-label="Visit my Codepen page">
                                     <i title="Visit my Codepen page" class="fa fa-codepen" aria-hidden="true"></i>
                                 </a>
+                                <a href="https://bitbucket.org/GingerNinjaNicko" target="_blank" rel="noopener" aria-label="Visit my Bitbucket page">
+                                    <i title="Visit my Bitbucket page" class="fa fa-bitbucket" aria-hidden="true"></i>
+                                </a>
+                                <!--
                                 <a href="https://github.com/GingerNinjaNicko" target="_blank" rel="noopener" aria-label="Visit my Github page">
                                     <i title="Visit my Github page" class="fa fa-github" aria-hidden="true"></i>
                                 </a>
+                                -->
+                                <!--
                                 <a href="https://medium.com/@GingerNinjaNick" target="_blank" rel="noopener" aria-label="Visit my Medium page">
                                     <i title="Visit my Medium page" class="fa fa-medium" aria-hidden="true"></i>
+                                </a>
+                                -->
+                                <a href="https://www.linkedin.com/in/gingerninjanicko/" target="_blank" rel="noopener" aria-label="Visit my Linkedin page">
+                                    <i title="Visit my Linkedin page" class="fa fa-linkedin-square" aria-hidden="true"></i>
                                 </a>
                                 <a href="https://www.facebook.com/GingerNinjaNick" target="_blank" rel="noopener" aria-label="Visit my Facebook page">
                                     <i title="Visit my Facebook page" class="fa fa-facebook-official" aria-hidden="true"></i>
                                 </a>
-                                <!--
-                                <a href="https://www.linkedin.com/in/gingerninjanicko/" target="_blank" rel="noopener" aria-label="Visit my Linkedin page">
-                                    <i title="Visit my Linkedin page" class="fa fa-linkedin-square" aria-hidden="true"></i>
-                                </a>
-                                -->
                             </p>
                         </div>
                     </section>
