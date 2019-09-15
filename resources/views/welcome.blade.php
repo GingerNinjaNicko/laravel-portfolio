@@ -15,7 +15,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="Nicko J. Ruddock">
-    <link rel="icon" href="./assets/imgs/favicon.ico"> 
+    <link rel="icon" href="{{ asset('img/favicon.ico') }}"> 
     <title>Nicko J. Ruddock - Portfolio</title>
 
     <!-- Adding Bootstrap CSS -->
@@ -84,7 +84,7 @@
                 </p>
                 </section>
                 <section class="col-lg-4 col-md-5">
-                    <img src="./assets/imgs/avatar.jpg" class="rounded-circle img-fluid" alt="Photo of Nicko J. Ruddock">
+                    <img src="{{ asset('img/avatar.jpg') }}" class="rounded-circle img-fluid" alt="Photo of Nicko J. Ruddock">
                 </section>
             </article>
         </div>
@@ -106,7 +106,7 @@
             <section class="col-lg-6 portfolio-sect">
                 <div class="card text-center">
                     <a href="https://codepen.io/GingerNinjaNicko/full/MoMPam" target="_blank" rel="noopener" title="View code on Codepen">
-                        <img src="./assets/imgs/screenshots/tl_email.png" alt="Screenshot of the 'Total Loss Email Generator'" class="card-img-top">
+                        <img src="{{ asset('img/screenshots/tl_email.png') }}" alt="Screenshot of the 'Total Loss Email Generator'" class="card-img-top">
                     </a>
                     <div class="card-body">
                         <h4 class="card-title">
@@ -132,7 +132,7 @@
             <section class="col-lg-6 portfolio-sect">
                 <div class="card text-center">
                     <a href="https://codepen.io/GingerNinjaNicko/full/EvYzJQ" target="_blank" rel="noopener" title="View code on Codepen">
-                        <img src="./assets/imgs/screenshots/claims_journey.png" alt="Screenshot of the 'Customer Journey Map'" class="card-img-top">
+                        <img src="{{ asset('img/screenshots/claims_journey.png') }}" alt="Screenshot of the 'Customer Journey Map'" class="card-img-top">
                     </a>
                     <div class="card-body">
                         <h4 class="card-title">
@@ -158,7 +158,7 @@
             <section class="col-lg-6 portfolio-sect">
                 <div class="card text-center">
                     <a href="http://NickoJRuddock.com" title="View webpage">
-                        <img src="./assets/imgs/screenshots/portfolio.png" alt="Screenshot of Nicko's web portfolio" class="card-img-top">
+                        <img src="{{ asset('img/screenshots/portfolio.png') }}" alt="Screenshot of Nicko's web portfolio" class="card-img-top">
                     </a>
                     <div class="card-body">
                         <h4 class="card-title">
@@ -227,7 +227,7 @@
                     <section class="col-md-6">
                         <!-- img source: https://pixabay.com/en/contact-visit-letters-email-mail-2794680/ -->
                         <div class="vert-center">
-                            <img src="./assets/imgs/contact-crop.png" id="contact-img" class="img-fluid" alt="Flying mail image">
+                            <img src="{{ asset('img/contact-crop.png') }}" id="contact-img" class="img-fluid" alt="Flying mail image">
                         </div>
                     </section>
                 </div>
