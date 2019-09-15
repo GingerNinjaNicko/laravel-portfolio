@@ -24,12 +24,6 @@
     
     <!-- Font awesome -->
     <script async src="https://use.fontawesome.com/ab45073717.js"></script>
-    
-    <!-- If javascript not enabled, form submits to this page so include php form logic-->
-    <noscript>
-        <?php include_once './assets/php/contact.php'; ?>
-    </noscript>
-    
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="0">
     
