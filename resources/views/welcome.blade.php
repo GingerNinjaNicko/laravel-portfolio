@@ -266,7 +266,7 @@
     <footer>
         <div class="container">
             <span>
-                &copy; Copyright 2017 Nicko J. Ruddock
+                Copyright &copy; {{ now()->year }} Nicko J. Ruddock
             </span>
         </div>
     </footer>
