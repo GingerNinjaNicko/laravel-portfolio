@@ -215,10 +215,10 @@
                                     <i title="Visit my Medium page" class="fa fa-medium" aria-hidden="true"></i>
                                 </a>
                                 -->
-                                <a href="https://www.linkedin.com/in/gingerninjanicko/" target="_blank" rel="noopener" aria-label="Visit my Linkedin page">
+                                <a href="https://www.linkedin.com/in/GingerNinjaNicko/" target="_blank" rel="noopener" aria-label="Visit my Linkedin page">
                                     <i title="Visit my Linkedin page" class="fa fa-linkedin-square" aria-hidden="true"></i>
                                 </a>
-                                <a href="https://www.facebook.com/GingerNinjaNick" target="_blank" rel="noopener" aria-label="Visit my Facebook page">
+                                <a href="https://www.facebook.com/GingerNinjaNicko" target="_blank" rel="noopener" aria-label="Visit my Facebook page">
                                     <i title="Visit my Facebook page" class="fa fa-facebook-official" aria-hidden="true"></i>
                                 </a>
                             </p>
