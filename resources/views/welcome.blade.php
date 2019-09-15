@@ -20,7 +20,7 @@
 
     <!-- Adding Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="{{ mix('/css/app.css') }}">
     
     <!-- Font awesome -->
     <script async src="https://use.fontawesome.com/ab45073717.js"></script>
@@ -282,7 +282,7 @@
 	</script>
 	<script defer
 		type="text/javascript" 
-		src="./assets/js/main.min.js">
+		src="{{ mix('/js/app.js') }}">
 	</script>
 
 </body>
