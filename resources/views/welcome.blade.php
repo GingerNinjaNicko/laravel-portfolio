@@ -246,11 +246,14 @@
                             <div class="col-md-6">
                                 <textarea id="msg" name="msg" class="form-control form-control-lg" placeholder="Your message" aria-label="Your message"></textarea>
                             </div>
+                            <label for="robot" class="d-none">
+                                Are you a Robot?
+                            </label>
                             <div class="col-md-6 input-group input-group-lg">
-                                <label for="robot" class="input-group-addon">
-                                    Are you a Robot?
-                                </label>
-                                <input type="text" id="robot" name="robot" class="form-control form-control-lg" placeholder="Type 'no'">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Are you a Robot?</span>
+                                </div>
+                                <input type="text" id="robot" name="robot" class="form-control" placeholder="Type 'no'">
                             </div>
 
                             <div class="col-md-6">
