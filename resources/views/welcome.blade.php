@@ -237,7 +237,8 @@
                     <!-- Form submits to itself with no action tag if JavaScript disabled -->
                     <!-- Each input uses php to check whether field present in error array after submission & also to keep value after page reload  -->
                     <section class="col-12">
-                        <form method="POST" class="row">
+                        <form method="POST" action="{{ route('contact-us') }}" class="row">
+                            @csrf
                             <div class="col-md-6">
                                 <input type="text" id="name" name="name" class="form-control form-control-lg" placeholder="Your name" aria-label="Your name">
                                 <input type="text" id="email" name="email" class="form-control form-control-lg" placeholder="Your email" aria-label="Your email">
@@ -275,7 +276,14 @@
 	<script defer
 		type="text/javascript" 
 		src="{{ mix('/js/app.js') }}">
-	</script>
+    </script>
+
+    @if ( session('status') )
+        <script>alert('{{ session('status') }}')</script>
+    @endif
+    @if ( $errors->any() )
+        <script>alert("{{ implode(', ', $errors->all() ) }}")</script>
+    @endif
 
 </body>
 </html>
