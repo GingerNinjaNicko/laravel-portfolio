@@ -64,11 +64,11 @@
                     <p>
                         Passionate about creating clean, readable code for all things web. 
                         <br>
-                        I like to focus on front-end development with user experience always at the forefront of my mind.
+                        I enjoy full-stack development with user experience always at the forefront of my mind.
                     </p>
                     <hr class="divider">
                     <p>
-                        Javascript, HTML, CSS, Git/Github
+                        Laravel, Vue.js, HTML, CSS, Git
                     </p>
                     <p>
 					<a href="#contact">
