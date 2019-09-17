@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', 'WelcomeController');
+Route::get('/', 'WelcomeController')->name('welcome');
 
 // Auth::routes();
 
