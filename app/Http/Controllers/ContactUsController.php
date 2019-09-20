@@ -2,13 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\ContactForm;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class ContactUsController extends Controller
 {
     public function store(Request $request)
     {
-        $validatedData = $request->validate([
+        $enquiry = $request->validate([
             'name' => 'required|string',
             'email' => 'required|email',
             'msg' => 'required|string',
@@ -16,6 +18,7 @@ class ContactUsController extends Controller
         ]);
 
         // send message
+        Mail::to('info@nickoJRuddock.com')->send(new ContactForm($enquiry));
 
         // redirect with message
         return back()->with([
