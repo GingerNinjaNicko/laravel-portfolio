@@ -10705,10 +10705,8 @@ article.container {
 }
 
 .form-control,
-.input-group-addon {
-  height: 50px;
+.input-group-prepend {
   margin-bottom: 20px;
-  box-sizing: border-box;
 }
 
 textarea.form-control {
@@ -10726,10 +10724,6 @@ textarea.form-control {
 
 form .row:last-child input {
   margin-bottom: 0;
-}
-
-label {
-  line-height: 50px;
 }
 
 footer {
