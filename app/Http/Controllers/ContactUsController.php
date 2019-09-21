@@ -22,7 +22,7 @@ class ContactUsController extends Controller
 
         // redirect with message
         return back()->with([
-            'status' => 'Input valid!'
+            'status' => 'Email sent successfully'
         ]);
     }
 }
