@@ -22,7 +22,7 @@
                         <th>Name</td>
                         <th>Cost</td>
                         <th>Stock</td>
-                        <th>Edit</th>
+                        <th>Show</th>
                     </tr>
                     @foreach ($merch_items as $item)
                         <tr>
@@ -30,8 +30,8 @@
                             <td>{{ $item->cost }}</td>
                             <td>{{ $item->stock }}</td>
                             <td>
-                                <a href="#">
-                                    Edit Merch
+                                <a href="{{ route('merch.show', ['item' => $item->id]) }}">
+                                    Show Merch
                                 </a>
                             </td>
                         </tr>
