@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Merch;
 use Illuminate\Http\Request;
+use App\Http\Requests\MerchRequest;
 
 class MerchController extends Controller
 {
@@ -34,9 +35,18 @@ class MerchController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(MerchRequest $request)
     {
-        //
+        $newMerch = $request->validated();
+
+        Merch::create($newMerch);
+
+        return redirect()
+            ->route('merch.index')
+            ->with([
+                'message' => "{$newMerch['name']} created successfully",
+                'status' => 'success',
+            ]);
     }
 
     /**
