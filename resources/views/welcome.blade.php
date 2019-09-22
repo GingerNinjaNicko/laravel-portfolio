@@ -285,7 +285,7 @@
         <script>alert('{{ session('status') }}')</script>
     @endif
     @if ( $errors->any() )
-        <script>alert("{{ implode(', ', $errors->all() ) }}")</script>
+        <script>alert("{{ implode(' ', $errors->all() ) }}")</script>
     @endif
 
 </body>
