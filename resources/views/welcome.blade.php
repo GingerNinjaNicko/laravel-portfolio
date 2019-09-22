@@ -240,12 +240,12 @@
                         <form method="POST" action="{{ route('contact-us') }}" class="row">
                             @csrf
                             <div class="col-md-6">
-                                <input type="text" id="name" name="name" class="form-control form-control-lg" placeholder="Your name" aria-label="Your name">
-                                <input type="text" id="email" name="email" class="form-control form-control-lg" placeholder="Your email" aria-label="Your email">
+                                <input type="text" id="name" name="name" class="form-control form-control-lg" placeholder="Your name" aria-label="Your name" value="{{ old('name') }}">
+                                <input type="text" id="email" name="email" class="form-control form-control-lg" placeholder="Your email" aria-label="Your email" value="{{ old('email') }}">
                             </div>
                             
                             <div class="col-md-6">
-                                <textarea id="msg" name="msg" class="form-control form-control-lg" placeholder="Your message" aria-label="Your message"></textarea>
+                                <textarea id="msg" name="msg" class="form-control form-control-lg" placeholder="Your message" aria-label="Your message">{{ old('msg') }}</textarea>
                             </div>
                             <label for="robot" class="d-none">
                                 Are you a Robot?
@@ -254,7 +254,7 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text">Are you a Robot?</span>
                                 </div>
-                                <input type="text" id="robot" name="robot" class="form-control" placeholder="Type 'no'">
+                                <input type="text" id="robot" name="robot" class="form-control" placeholder="Type 'no'" value="{{ old('robot') }}">
                             </div>
 
                             <div class="col-md-6">
