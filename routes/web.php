@@ -18,3 +18,9 @@ Route::post('/contact-us', 'ContactUsController@store')->name('contact-us');
 // Auth::routes();
 
 // Route::get('/home', 'HomeController@index')->name('home');
+
+Route::prefix('/examples')->group(function () {
+    Route::prefix('/merch')->name('merch.')->group(function () {
+        Route::get('/', 'MerchController@index')->name('index');
+    });
+});
