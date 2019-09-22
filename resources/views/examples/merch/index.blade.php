@@ -16,6 +16,13 @@
     </div>
     <div class="container">
         <div class="row">
+            <a href="{{ route('merch.create') }}">
+                <button type="button" class="btn btn-success">
+                    Add New Item
+                </button>
+            </a>
+        </div>
+        <div class="row">
             <div class="table-responsive">
                 <table class="table table-bordered table-hover">
                     <tr>
