@@ -25,7 +25,7 @@ class MerchController extends Controller
      */
     public function create()
     {
-        //
+        return view('examples.merch.create');
     }
 
     /**
