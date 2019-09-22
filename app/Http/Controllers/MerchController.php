@@ -15,7 +15,7 @@ class MerchController extends Controller
      */
     public function index()
     {
-        $merch_items = Merch::paginate(15);
+        $merch_items = Merch::orderBy('created_at', 'desc')->paginate(15);
         return view('examples.merch.index', compact('merch_items'));
     }
 
