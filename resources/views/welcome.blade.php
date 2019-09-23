@@ -50,6 +50,7 @@
         </div>
         
         <div class="row justify-content-center">
+
             @component('components.portfolio_card', [
                 'title' => 'Portfolio',
                 'subtitle' => 'Putting my stamp on the web',
@@ -69,6 +70,7 @@
             ])
                 Transferring my portfolio over to a Laravel backend has improved speed, security &amp; enabled easier creation of my personal blog. I pushed to improve myself by hosting my new site on <a href="https://www.digitalocean.com/">Digital Ocean</a>. This meant researching Linux commands &amp; the joys of push-to-deploy with <a href="https://deployhq.com">DeployHQ</a> in the process. I see every project as a chance to push my knowledge further and as a result, my skill-set has broadened to encompass the complex world of DevOps.
             @endcomponent
+
             @component('components.portfolio_card', [
                 'title' => 'SN KAPAP',
                 'subtitle' => 'Supporting local business',
@@ -83,6 +85,7 @@
             ])
                 When <a href="https://snkapap.co.uk">SN KAPAP</a> were looking to create a website, I knew they needed was a simple Wordpress site with a professional yet friendly look. Wordpress allows just the right amount of content customisation for the client, whilst locking off the vital backend for myself to administrate. This website uses a pre-built theme with customisation to meet the client's exact specification. We continue to work together, looking to improve SEO and grow the club.
             @endcomponent
+
             @component('components.portfolio_card', [
                 'title' => 'Merch Manager',
                 'subtitle' => 'Keeping track',
@@ -102,6 +105,7 @@
             ])
                 Created as a proof of concept, managing merchandise became easy! Add new merch, edit & view exiting merch or delete merch you no longer stock. You can even update the stock by either adding, subtracting or setting an absolute amount. Built with Laravel & bootstrap as a bolt-on to this portfolio site as a way to demonstrate clean code and what's possible with the finesse of Laravel. You can <a href="https://bitbucket.org/GingerNinjaNicko/laravel-portfolio/src/master/">view the source code on BitBucket</a>.
             @endcomponent
+
             @component('components.portfolio_card', [
                 'title' => 'TL Email Generator',
                 'subtitle' => 'Killing complexity',
@@ -121,6 +125,7 @@
             ])
                 I love identifying problems and tackling them head on, which is why I tackled the complexity of total loss emails, creating this app to minimise user error. JavaScript is used to update the template in real time, activating the logic for calculations and adding legal text where necessary to create a comprehensive &amp; accurate document. The entire process takes around one minute compared to over five if written from scratch!
             @endcomponent
+
             @component('components.portfolio_card', [
                 'title' => 'The Customer Journey Map',
                 'subtitle' => 'Interactive user experiences',
@@ -140,6 +145,7 @@
             ])
                 I am passionate about building fantastic user experiences which are responsive on all devices. For example, when I took my colleagues design for the ‘Motor Claims Journey’ and transformed it into an exciting user map with a mix of CSS animation, media queries and a touch of JavaScript to organise the data in a way that’s easy to follow. I've changed the data for demo purposes, but this app was a hit with higher management.
             @endcomponent
+
         </div>
     </article>
 
@@ -202,6 +208,7 @@
                     ])
                         {{ session('message') }}
                     @endcomponent
+
                     @component('components.alert', [
                         'check' => $errors->any(),
                         'type' => 'danger',
@@ -212,6 +219,7 @@
                             @endforeach
                         </ul>
                     @endcomponent
+
                     <!-- Form submits to itself with no action tag if JavaScript disabled -->
                     <!-- Each input uses php to check whether field present in error array after submission & also to keep value after page reload  -->
                     <section class="col-12">
