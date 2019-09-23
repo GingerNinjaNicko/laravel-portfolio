@@ -78,11 +78,15 @@ class MerchController extends Controller
      * @param  \App\Merch  $merch
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Merch $merch)
+    public function update(MerchRequest $request, Merch $merch)
     {
-        return redirect()->route('examples.merch.index')->with([
-            'status' => 'danger',
-            'message' => 'Route does not yet exist, please check back later...',
+        $newMerch = $request->validated();
+
+        $merch->update($newMerch);
+
+        return back()->with([
+            'message' => "Merch \"{$merch->name}\" updated successfully",
+            'status' => 'success',
         ]);
     }
 
