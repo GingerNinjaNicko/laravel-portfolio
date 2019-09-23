@@ -15,9 +15,9 @@ class CreateMerchesTable extends Migration
     {
         Schema::create('merches', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('name');
-            $table->integer('cost');
-            $table->integer('stock');
+            $table->string('name')->unique();
+            $table->smallInteger('cost')->unsigned();
+            $table->smallInteger('stock')->unsigned();
             $table->timestamps();
         });
     }

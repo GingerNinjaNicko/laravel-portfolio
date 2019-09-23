@@ -1,14 +1,14 @@
 @extends('examples.merch.layouts.merch')
 
 @section('title')
-    Create Merch
+    Show Merch
 @endsection
 
 @section('merch_content')
     <div class="container">
         @component('examples.merch.components.merch_form', [
-            'action' => route('examples.merch.store'),
-            'method' => 'POST'
+            'method' => 'GET',
+            'merch' => $merch,
         ])
         @endcomponent
     </div>

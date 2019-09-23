@@ -25,9 +25,9 @@ class MerchRequest extends FormRequest
     {
         return [
             'id' => 'sometimes|required|integer',
-            'name' => 'required|string',
-            'cost' => 'required|integer',
-            'stock' => 'required|integer',
+            'name' => 'required|string|max:255',
+            'cost' => 'required|integer|between:0,65535',
+            'stock' => 'required|integer|between:0,65535',
         ];
     }
 }

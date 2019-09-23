@@ -1,22 +1,13 @@
-@extends('layouts.app')
+@extends('examples.merch.layouts.merch')
 
 @section('title')
-    Merch
+    Our Merch
 @endsection
 
-@section('content')
-    <div class="container">
-        <div class="jumbotron row">
-            <div class="col-sm-12 text-center">
-                <h1 class="display-3">
-                    Our Merch
-                </h1>
-            </div>
-        </div>
-    </div>
+@section('merch_content')
     <div class="container">
         <div class="row">
-            <a href="{{ route('merch.create') }}">
+            <a href="{{ route('examples.merch.create') }}">
                 <button type="button" class="btn btn-success">
                     Add New Item
                 </button>
@@ -31,13 +22,13 @@
                         <th>Stock</td>
                         <th>Show</th>
                     </tr>
-                    @foreach ($merch_items as $item)
+                    @foreach ($merch_items as $merch)
                         <tr>
-                            <td>{{ $item->name }}</td>
-                            <td>{{ $item->cost }}</td>
-                            <td>{{ $item->stock }}</td>
+                            <td>{{ $merch->name }}</td>
+                            <td>{{ $merch->cost }}</td>
+                            <td>{{ $merch->stock }}</td>
                             <td>
-                                <a href="{{ route('merch.show', ['item' => $item->id]) }}">
+                                <a href="{{ route('examples.merch.show', ['merch' => $merch]) }}">
                                     Show Merch
                                 </a>
                             </td>

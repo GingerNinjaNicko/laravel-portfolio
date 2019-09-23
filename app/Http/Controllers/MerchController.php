@@ -42,7 +42,7 @@ class MerchController extends Controller
         Merch::create($newMerch);
 
         return redirect()
-            ->route('merch.index')
+            ->route('examples.merch.index')
             ->with([
                 'message' => "{$newMerch['name']} created successfully",
                 'status' => 'success',
@@ -57,10 +57,7 @@ class MerchController extends Controller
      */
     public function show(Merch $merch)
     {
-        return redirect()->route('merch.index')->with([
-            'status' => 'danger',
-            'message' => 'Route does not yet exist, please check back later...',
-        ]);
+        return view('examples.merch.show', compact('merch'));
     }
 
     /**
@@ -71,10 +68,7 @@ class MerchController extends Controller
      */
     public function edit(Merch $merch)
     {
-        return redirect()->route('merch.index')->with([
-            'status' => 'danger',
-            'message' => 'Route does not yet exist, please check back later...',
-        ]);
+        return view('examples.merch.edit', compact('merch'));
     }
 
     /**
@@ -84,11 +78,15 @@ class MerchController extends Controller
      * @param  \App\Merch  $merch
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Merch $merch)
+    public function update(MerchRequest $request, Merch $merch)
     {
-        return redirect()->route('merch.index')->with([
-            'status' => 'danger',
-            'message' => 'Route does not yet exist, please check back later...',
+        $newMerch = $request->validated();
+
+        $merch->update($newMerch);
+
+        return back()->with([
+            'message' => "Merch \"{$merch->name}\" updated successfully",
+            'status' => 'success',
         ]);
     }
 
@@ -100,9 +98,15 @@ class MerchController extends Controller
      */
     public function destroy(Merch $merch)
     {
-        return redirect()->route('merch.index')->with([
-            'status' => 'danger',
-            'message' => 'Route does not yet exist, please check back later...',
-        ]);
+        $merchName = $merch->name;
+
+        $merch->delete();
+
+        return redirect()
+            ->route('examples.merch.index')
+            ->with([
+                'message' => "\"{$merchName}\" successfully deleted",
+                'status' => 'danger',
+            ]);
     }
 }
