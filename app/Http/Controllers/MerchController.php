@@ -57,7 +57,10 @@ class MerchController extends Controller
      */
     public function show(Merch $merch)
     {
-        //
+        return redirect()->route('merch.index')->with([
+            'status' => 'danger',
+            'message' => 'Route does not yet exist, please check back later...',
+        ]);
     }
 
     /**
@@ -68,7 +71,10 @@ class MerchController extends Controller
      */
     public function edit(Merch $merch)
     {
-        //
+        return redirect()->route('merch.index')->with([
+            'status' => 'danger',
+            'message' => 'Route does not yet exist, please check back later...',
+        ]);
     }
 
     /**
@@ -80,7 +86,10 @@ class MerchController extends Controller
      */
     public function update(Request $request, Merch $merch)
     {
-        //
+        return redirect()->route('merch.index')->with([
+            'status' => 'danger',
+            'message' => 'Route does not yet exist, please check back later...',
+        ]);
     }
 
     /**
@@ -91,6 +100,9 @@ class MerchController extends Controller
      */
     public function destroy(Merch $merch)
     {
-        //
+        return redirect()->route('merch.index')->with([
+            'status' => 'danger',
+            'message' => 'Route does not yet exist, please check back later...',
+        ]);
     }
 }
