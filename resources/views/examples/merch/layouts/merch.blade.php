@@ -14,14 +14,14 @@
         </div>
     </div>
 
-    @component('examples.merch.components.alert', [
+    @component('components.alert', [
         'check' => session('message'),
         'type' => session('status') ?? 'success',
     ])
         {{ session('message') }}
     @endcomponent
     
-    @component('examples.merch.components.alert', [
+    @component('components.alert', [
         'check' => $errors->any(),
         'type' => 'danger',
     ])
