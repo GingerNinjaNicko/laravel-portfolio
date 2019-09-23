@@ -49,9 +49,19 @@
         </div>
     </div>
 
-    <div class="form-group">
-        <button type="submit" class="btn btn-success">
-            Save Item
-        </button>
-    </div>
+    @if (isset($action))
+        <div class="form-group">
+            <button type="submit" class="btn btn-success">
+                Save Item
+            </button>
+        </div>
+    @else
+        <div class="form-group">
+            <a href="{{ route('examples.merch.edit', ['merch' => $merch->id]) }}">
+                <button type="button" class="btn btn-warning">
+                    Edit Item
+                </button>
+            </a>
+        </div>
+    @endif
 </form>
