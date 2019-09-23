@@ -40,7 +40,7 @@
     
     <nav class="navbar navbar-expand-sm fixed-top navbar-dark bg-dark">
         <div class="container">
-            <a href="#top" class="navbar-brand">
+            <a href="/#top" class="navbar-brand">
                 <h1>
                     NJR
                 </h1>
@@ -51,13 +51,13 @@
             
             <div class="collapse navbar-collapse" id="nav-collapse-items" data-toggle="collapse" data-target="#nav-collapse-items">
                 <div class="navbar-nav ml-auto">
-                    <a href="#top" class="nav-item nav-link">
+                    <a href="/#top" class="nav-item nav-link">
                         Home
                     </a>
-                    <a href="#portfolio" class="nav-item nav-link">
+                    <a href="/#portfolio" class="nav-item nav-link">
                         Portfolio
                     </a>
-                    <a href="#contact" class="nav-item nav-link">
+                    <a href="/#contact" class="nav-item nav-link">
                         Contact
                     </a>
                 </div>
