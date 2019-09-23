@@ -7,6 +7,9 @@
                 <h1 class="display-3">
                     @yield('title')
                 </h1>
+                <a href="{{ route('examples.merch.index') }}">
+                    <button class="btn btn-secondary">go to Merch index</button>
+                </a>
             </div>
         </div>
     </div>
