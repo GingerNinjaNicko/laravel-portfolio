@@ -1,4 +1,4 @@
-<form action="{{ $action }}" method="POST">
+<form action="{{ $action ?? null }}" method="POST">
     @csrf
     @if (in_array($method, ['PUT', 'PATCH', 'DELETE']))
         @method($method)
@@ -13,10 +13,12 @@
                 maxlength="255"
                 class="form-control"
                 name="name"
-                value="{{ old('name') }}"
-                placeholder="Merch item name...">
+                value="{{ old('name') ?? $merch->name ?? null }}"
+                placeholder="Merch item name..."
+                @if('readonly' === $method) readonly @endif>
         </div>
     </div>
+
     <div class="form-group row">
         <label for="cost" class="col-sm-2 col-form-label">
             Cost
@@ -26,10 +28,12 @@
                 min="0" max="65535"
                 class="form-control"
                 name="cost"
-                value="{{ old('cost') }}"
-                placeholder="Cost of item">
+                value="{{ old('cost') ?? $merch->cost ?? null }}"
+                placeholder="Cost of item"
+                @if('readonly' === $method) readonly @endif>
         </div>
     </div>
+
     <div class="form-group row">
         <label for="stock" class="col-sm-2 col-form-label">
             Stock
@@ -39,8 +43,9 @@
                 min="0" max="65535"
                 class="form-control"
                 name="stock"
-                value="{{ old('stock') }}"
-                placeholder="Stock level">
+                value="{{ old('stock') ?? $merch->stock ?? null }}"
+                placeholder="Stock level"
+                @if('readonly' === $method) readonly @endif>
         </div>
     </div>
 
