@@ -5,13 +5,6 @@
 @endsection
 
 @section('content')
-    @if (session('message'))
-        <div class="container">
-            <div class="alert alert-{{ session('status') ?? 'success' }}" role="alert">
-                {{ session('message') }}
-            </div>
-        </div>
-    @endif
     <div class="container">
         <div class="jumbotron row">
             <div class="col-sm-12 text-center">
