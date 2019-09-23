@@ -10,5 +10,24 @@
             </div>
         </div>
     </div>
+
+    @component('examples.merch.components.alert', [
+        'check' => session('message'),
+        'type' => session('status') ?? 'success',
+    ])
+        {{ session('message') }}
+    @endcomponent
+    
+    @component('examples.merch.components.alert', [
+        'check' => $errors->any(),
+        'type' => 'danger',
+    ])
+        <ul>
+            @foreach ($errors->all() as $message)
+                <li>{{ $message }}</li>
+            @endforeach
+        </ul>
+    @endcomponent
+
     @yield('merch_content')
 @endsection
