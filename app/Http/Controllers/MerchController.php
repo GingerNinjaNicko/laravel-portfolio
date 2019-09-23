@@ -68,10 +68,7 @@ class MerchController extends Controller
      */
     public function edit(Merch $merch)
     {
-        return redirect()->route('examples.merch.index')->with([
-            'status' => 'danger',
-            'message' => 'Route does not yet exist, please check back later...',
-        ]);
+        return view('examples.merch.edit', compact('merch'));
     }
 
     /**
