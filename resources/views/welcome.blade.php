@@ -51,6 +51,14 @@
         
         <div class="row justify-content-center">
             @component('components.portfolio_card', [
+                'title' => 'Merch Manager',
+                'subtitle' => 'Keeping track',
+                'screenshotName' => 'merch_manager.png',
+                'link' => route('examples.merch.index'),
+            ])
+                Created as a proof of concept, managing merchandise became easy! Add new merch, edit & view exiting merch or delete merch you no longer stock. Built with Laravel & bootstrap as a bolt-on to this portfolio site as a way to demonstrate clean code and what's possible with the finesse of Laravel. You can <a href="https://bitbucket.org/GingerNinjaNicko/laravel-portfolio/src/master/">view the source code on BitBucket</a>.
+            @endcomponent
+            @component('components.portfolio_card', [
                 'title' => 'TL Email Generator',
                 'subtitle' => 'Killing complexity',
                 'screenshotName' => 'tl_email.png',
