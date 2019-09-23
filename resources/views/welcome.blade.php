@@ -51,6 +51,14 @@
         
         <div class="row justify-content-center">
             @component('components.portfolio_card', [
+                'title' => 'Portfolio',
+                'subtitle' => 'Putting my stamp on the web',
+                'screenshotName' => 'portfolio.png',
+                'link' => '/',
+            ])
+                Transferring my portfolio over to a Laravel backend has improved speed, security &amp; enabled easier creation of my personal blog. I pushed to improve myself by hosting my new site on <a href="https://www.digitalocean.com/">Digital Ocean</a>. This meant researching Linux commands &amp; the joys of push-to-deploy with <a href="https://deployhq.com">DeployHQ</a> in the process. I see every project as a chance to push my knowledge further and as a result, my skill-set has broadened to encompass the complex world of DevOps.
+            @endcomponent
+            @component('components.portfolio_card', [
                 'title' => 'Merch Manager',
                 'subtitle' => 'Keeping track',
                 'screenshotName' => 'merch_manager.png',
@@ -73,14 +81,6 @@
                 'link' => 'https://codepen.io/GingerNinjaNicko/full/EvYzJQ',
             ])
                 I am passionate about building fantastic user experiences which are responsive on all devices. For example, when I took my colleagues design for the ‘Motor Claims Journey’ and transformed it into an exciting user map with a mix of CSS animation, media queries and a touch of JavaScript to organise the data in a way that’s easy to follow. I've changed the data for demo purposes, but this app was a hit with higher management.
-            @endcomponent
-            @component('components.portfolio_card', [
-                'title' => 'Portfolio',
-                'subtitle' => 'Putting my stamp on the web',
-                'screenshotName' => 'portfolio.png',
-                'link' => '/',
-            ])
-                For this page, I set myself a deadline to design &amp; build the entire site in just one week. To begin I thoroughly researched and designed my site before even touching the code because I find if I'm prepared then the development flows alot smoother. Since I knew I didn't have much time, I decided to utilise the latest version of <a href="https://getbootstrap.com">Bootstrap</a> to get me up and running in style as quick as possible.
             @endcomponent
         </div>
     </article>
