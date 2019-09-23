@@ -21,7 +21,7 @@ class ContactUsController extends Controller
         Mail::to('info@nickoJRuddock.com')->send(new ContactForm($enquiry));
 
         // redirect with message
-        return back()->with([
+        return redirect('/#contact')->with([
             'message' => 'Email sent successfully',
             'status' => 'success',
         ]);
