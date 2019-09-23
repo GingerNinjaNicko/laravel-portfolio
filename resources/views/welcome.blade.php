@@ -51,31 +51,14 @@
         
         <div class="row justify-content-center">
             
-            <section class="col-lg-6 portfolio-sect">
-                <div class="card text-center">
-                    <a href="https://codepen.io/GingerNinjaNicko/full/MoMPam" target="_blank" rel="noopener" title="View code on Codepen">
-                        <img src="{{ asset('images/screenshots/tl_email.png') }}" alt="Screenshot of the 'Total Loss Email Generator'" class="card-img-top">
-                    </a>
-                    <div class="card-body">
-                        <h4 class="card-title">
-                            TL Email Generator
-                        </h4>
-                        <h6 class="card-subtitle text-muted">
-                            Killing complexity
-                        </h6>
-                        <hr class="divider">
-                        <p class="card-text">
-                            I love identifying problems and tackling them head on, which is why I tackled the complexity of total loss emails, creating this app to minimise user error. JavaScript is used to update the template in real time, activating the logic for calculations and adding legal text where necessary to create a comprehensive &amp; accurate document. The entire process takes around one minute compared to over five if written from scratch!
-						</p>
-						<a href="https://codepen.io/GingerNinjaNicko/full/MoMPam" title="View code on Codepen" target="_blank" rel="noopener">
-							<button class="btn btn-success" tabindex="-1">
-								<i class="fa fa-codepen" aria-hidden="true"></i>
-								View App
-							</button>
-						</a>
-                    </div>
-                </div>
-            </section>
+            @component('components.portfolio_card', [
+                'title' => 'TL Email Generator',
+                'subtitle' => 'Killing complexity',
+                'screenshotName' => 'tl_email.png',
+                'link' => 'https://codepen.io/GingerNinjaNicko/full/MoMPam',
+                'text' => 'I love identifying problems and tackling them head on, which is why I tackled the complexity of total loss emails, creating this app to minimise user error. JavaScript is used to update the template in real time, activating the logic for calculations and adding legal text where necessary to create a comprehensive &amp; accurate document. The entire process takes around one minute compared to over five if written from scratch!',
+            ])
+            @endcomponent
             
             <section class="col-lg-6 portfolio-sect">
                 <div class="card text-center">
