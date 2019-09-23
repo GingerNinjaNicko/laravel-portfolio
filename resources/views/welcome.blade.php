@@ -138,7 +138,22 @@
                     </section>
                 </div>
                 <div class="row">
-                    
+                    @component('components.alert', [
+                        'check' => session('message'),
+                        'type' => session('status') ?? 'success',
+                    ])
+                        {{ session('message') }}
+                    @endcomponent
+                    @component('components.alert', [
+                        'check' => $errors->any(),
+                        'type' => 'danger',
+                    ])
+                        <ul>
+                            @foreach ($errors->all() as $message)
+                                <li>{{ $message }}</li>
+                            @endforeach
+                        </ul>
+                    @endcomponent
                     <!-- Form submits to itself with no action tag if JavaScript disabled -->
                     <!-- Each input uses php to check whether field present in error array after submission & also to keep value after page reload  -->
                     <section class="col-12">
