@@ -15,7 +15,7 @@
                 name="name"
                 value="{{ old('name') ?? $merch->name ?? null }}"
                 placeholder="Merch item name..."
-                @if('readonly' === $method) readonly @endif>
+                @if('get' === $method) readonly @endif>
         </div>
     </div>
 
@@ -30,7 +30,7 @@
                 name="cost"
                 value="{{ old('cost') ?? $merch->cost ?? null }}"
                 placeholder="Cost of item"
-                @if('readonly' === $method) readonly @endif>
+                @if('get' === $method) readonly @endif>
         </div>
     </div>
 
@@ -45,7 +45,7 @@
                 name="stock"
                 value="{{ old('stock') ?? $merch->stock ?? null }}"
                 placeholder="Stock level"
-                @if('readonly' === $method) readonly @endif>
+                @if('get' === $method) readonly @endif>
         </div>
     </div>
 
