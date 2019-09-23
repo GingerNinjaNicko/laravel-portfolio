@@ -70,6 +70,20 @@
                 Transferring my portfolio over to a Laravel backend has improved speed, security &amp; enabled easier creation of my personal blog. I pushed to improve myself by hosting my new site on <a href="https://www.digitalocean.com/">Digital Ocean</a>. This meant researching Linux commands &amp; the joys of push-to-deploy with <a href="https://deployhq.com">DeployHQ</a> in the process. I see every project as a chance to push my knowledge further and as a result, my skill-set has broadened to encompass the complex world of DevOps.
             @endcomponent
             @component('components.portfolio_card', [
+                'title' => 'SN KAPAP',
+                'subtitle' => 'Supporting local business',
+                'screenshotName' => 'snkapap_screenshot.png',
+                'links' => [
+                    [
+                        'verb' => 'View',
+                        'source' => 'wordpress',
+                        'url' => 'https://snkapap.co.uk',
+                    ],
+                ]
+            ])
+                When <a href="https://snkapap.co.uk">SN KAPAP</a> were looking to create a website, I knew they needed was a simple Wordpress site with a professional yet friendly look. Wordpress allows just the right amount of content customisation for the client, whilst locking off the vital backend for myself to administrate. This website uses a pre-built theme with customisation to meet the client's exact specification. We continue to work together, looking to improve SEO and grow the club.
+            @endcomponent
+            @component('components.portfolio_card', [
                 'title' => 'Merch Manager',
                 'subtitle' => 'Keeping track',
                 'screenshotName' => 'merch_manager.png',
