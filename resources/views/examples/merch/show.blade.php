@@ -7,7 +7,6 @@
 @section('merch_content')
     <div class="container">
         @component('examples.merch.components.merch_form', [
-            'action' => '',
             'method' => 'readonly',
             'merch' => $merch,
         ])
