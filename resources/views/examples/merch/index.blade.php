@@ -28,7 +28,7 @@
                             <td>{{ $merch->cost }}</td>
                             <td>{{ $merch->stock }}</td>
                             <td>
-                                <a href="{{ route('examples.merch.show', ['merch' => $merch->id]) }}">
+                                <a href="{{ route('examples.merch.show', ['merch' => $merch]) }}">
                                     Show Merch
                                 </a>
                             </td>

@@ -57,7 +57,7 @@
         </div>
     @else
         <div class="form-group">
-            <a href="{{ route('examples.merch.edit', ['merch' => $merch->id]) }}">
+            <a href="{{ route('examples.merch.edit', ['merch' => $merch]) }}">
                 <button type="button" class="btn btn-warning">
                     Edit Item
                 </button>
