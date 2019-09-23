@@ -23,7 +23,10 @@
         <label for="cost" class="col-sm-2 col-form-label">
             Cost
         </label>
-        <div class="col-sm-10">
+        <div class="col-sm-10 input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text">£</div>
+            </div>
             <input type="number"
                 min="0" max="65535"
                 class="form-control"

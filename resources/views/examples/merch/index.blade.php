@@ -25,7 +25,7 @@
                     @foreach ($merch_items as $merch)
                         <tr>
                             <td>{{ $merch->name }}</td>
-                            <td>{{ $merch->cost }}</td>
+                            <td>£{{ $merch->cost }}</td>
                             <td>{{ $merch->stock }}</td>
                             <td>
                                 <a href="{{ route('examples.merch.show', ['merch' => $merch]) }}">
