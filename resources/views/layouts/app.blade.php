@@ -65,6 +65,25 @@
         </div> <!-- /.container -->
     </nav>
 
+    @if (session('message'))
+        <div class="container">
+            <div class="text-center alert alert-{{ session('status') ?? 'success' }}" role="alert">
+                {{ session('message') }}
+            </div>
+        </div>
+    @endif
+    @if ($errors->any())
+        <div class="container">
+            <div class="text-center alert alert-danger" role="alert">
+                <ul>
+                    @foreach ($errors->all() as $message)
+                        <li>{{ $message }}</li>
+                    @endforeach
+                </ul>
+            </div>
+        </div>
+    @endif
+
     @yield('content')
 
     <footer>
@@ -74,13 +93,6 @@
             </span>
         </div>
     </footer>
-
-    @if ( session('status') )
-        <script>alert('{{ session('status') }}')</script>
-    @endif
-    @if ( $errors->any() )
-        <script>alert("{{ implode(' ', $errors->all() ) }}")</script>
-    @endif
 
 </body>
 </html>
