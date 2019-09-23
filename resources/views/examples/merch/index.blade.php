@@ -29,7 +29,7 @@
                             <td>{{ $merch->stock }}</td>
                             <td>
                                 <a href="{{ route('examples.merch.show', ['merch' => $merch]) }}">
-                                    Show Merch
+                                    <button class="btn btn-primary">Show</button>
                                 </a>
                             </td>
                         </tr>
