@@ -41,6 +41,7 @@ class ContactUsRequest extends FormRequest
     public function messages()
     {
         return [
+            'robot.required' => 'Please confirm you are not a robot',
             'robot.in' => 'Please confirm you are not a robot',
         ];
     }
