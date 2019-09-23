@@ -54,7 +54,18 @@
                 'title' => 'Portfolio',
                 'subtitle' => 'Putting my stamp on the web',
                 'screenshotName' => 'portfolio.png',
-                'link' => '/',
+                'links' => [
+                    [
+                        'verb' => 'View',
+                        'source' => 'codepen',
+                        'url' => '/',
+                    ],
+                    [
+                        'verb' => 'Code',
+                        'source' => 'bitbucket',
+                        'url' => 'https://bitbucket.org/GingerNinjaNicko/laravel-portfolio/src/master/',
+                    ],
+                ]
             ])
                 Transferring my portfolio over to a Laravel backend has improved speed, security &amp; enabled easier creation of my personal blog. I pushed to improve myself by hosting my new site on <a href="https://www.digitalocean.com/">Digital Ocean</a>. This meant researching Linux commands &amp; the joys of push-to-deploy with <a href="https://deployhq.com">DeployHQ</a> in the process. I see every project as a chance to push my knowledge further and as a result, my skill-set has broadened to encompass the complex world of DevOps.
             @endcomponent
@@ -62,7 +73,18 @@
                 'title' => 'Merch Manager',
                 'subtitle' => 'Keeping track',
                 'screenshotName' => 'merch_manager.png',
-                'link' => route('examples.merch.index'),
+                'links' => [
+                    [
+                        'verb' => 'View',
+                        'source' => 'codepen',
+                        'url' => route('examples.merch.index'),
+                    ],
+                    [
+                        'verb' => 'Code',
+                        'source' => 'bitbucket',
+                        'url' => 'https://bitbucket.org/GingerNinjaNicko/laravel-portfolio/src/master/',
+                    ],
+                ]
             ])
                 Created as a proof of concept, managing merchandise became easy! Add new merch, edit & view exiting merch or delete merch you no longer stock. You can even update the stock by either adding, subtracting or setting an absolute amount. Built with Laravel & bootstrap as a bolt-on to this portfolio site as a way to demonstrate clean code and what's possible with the finesse of Laravel. You can <a href="https://bitbucket.org/GingerNinjaNicko/laravel-portfolio/src/master/">view the source code on BitBucket</a>.
             @endcomponent
@@ -70,7 +92,18 @@
                 'title' => 'TL Email Generator',
                 'subtitle' => 'Killing complexity',
                 'screenshotName' => 'tl_email.png',
-                'link' => 'https://codepen.io/GingerNinjaNicko/full/MoMPam',
+                'links' => [
+                    [
+                        'verb' => 'View',
+                        'source' => 'codepen',
+                        'url' => 'https://codepen.io/GingerNinjaNicko/full/MoMPam',
+                    ],
+                    [
+                        'verb' => 'Code',
+                        'source' => 'codepen',
+                        'url' => 'https://codepen.io/GingerNinjaNicko/full/MoMPam',
+                    ],
+                ]
             ])
                 I love identifying problems and tackling them head on, which is why I tackled the complexity of total loss emails, creating this app to minimise user error. JavaScript is used to update the template in real time, activating the logic for calculations and adding legal text where necessary to create a comprehensive &amp; accurate document. The entire process takes around one minute compared to over five if written from scratch!
             @endcomponent
@@ -78,7 +111,18 @@
                 'title' => 'The Customer Journey Map',
                 'subtitle' => 'Interactive user experiences',
                 'screenshotName' => 'claims_journey.png',
-                'link' => 'https://codepen.io/GingerNinjaNicko/full/EvYzJQ',
+                'links' => [
+                    [
+                        'verb' => 'View',
+                        'source' => 'codepen',
+                        'url' => 'https://codepen.io/GingerNinjaNicko/full/EvYzJQ',
+                    ],
+                    [
+                        'verb' => 'Code',
+                        'source' => 'codepen',
+                        'url' => 'https://codepen.io/GingerNinjaNicko/full/EvYzJQ',
+                    ],
+                ]
             ])
                 I am passionate about building fantastic user experiences which are responsive on all devices. For example, when I took my colleagues design for the ‘Motor Claims Journey’ and transformed it into an exciting user map with a mix of CSS animation, media queries and a touch of JavaScript to organise the data in a way that’s easy to follow. I've changed the data for demo purposes, but this app was a hit with higher management.
             @endcomponent

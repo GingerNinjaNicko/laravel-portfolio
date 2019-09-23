@@ -1,6 +1,6 @@
 <section class="col-lg-6 portfolio-sect">
     <div class="card text-center">
-        <a href="{{ $link }}" title="View code on Codepen">
+        <a href="{{ $links[0]['url'] }}" title="View it on {{ $links[0]['source'] }}">
             <img src="{{ asset("images/screenshots/{$screenshotName}") }}" alt="Screenshot of the '{{ $title }}' project" class="card-img-top">
         </a>
         <div class="card-body">
@@ -14,12 +14,14 @@
             <p class="card-text">
                 {{ $slot }}
             </p>
-            <a href="{{ $link }}" title="View code on Codepen">
-                <button class="btn btn-success" tabindex="-1">
-                    <i class="fa fa-codepen" aria-hidden="true"></i>
-                    View App
-                </button>
-            </a>
+            @foreach ($links as $link)
+                <a href="{{ $link['url'] }}" title="View it on {{ $link['source'] }}">
+                    <button class="btn btn-success" tabindex="-1">
+                        <i class="fa fa-{{ $link['source'] }}" aria-hidden="true"></i>
+                        {{ $link['verb'] }}
+                    </button>
+                </a>
+            @endforeach
         </div>
     </div>
 </section>
