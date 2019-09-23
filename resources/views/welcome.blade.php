@@ -1,58 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111198791-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+@extends('layouts.app')
 
-      gtag('config', 'UA-111198791-1');
-    </script>
+@section('title')
+    Portfolio
+@endsection
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="author" content="Nicko J. Ruddock">
-    <link rel="icon" href="{{ asset('img/favicon.ico') }}"> 
-    <title>Nicko J. Ruddock - Portfolio</title>
-    <link rel="stylesheet" href="{{ mix('/css/app.css') }}">
-    <!-- Font awesome -->
-    <script async src="https://use.fontawesome.com/ab45073717.js"></script>
-</head>
-<body data-spy="scroll" data-target=".navbar" data-offset="0">
-    
-    <!-- Invisible top for scrollspy functionality -->
-    <div id="top"></div>
-    
-    <nav class="navbar navbar-expand-sm fixed-top navbar-dark bg-dark">
-        <div class="container">
-            <a href="#top" class="navbar-brand">
-                <h1>
-                    NJR
-                </h1>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-collapse-items" aria-controls="nav-collapse-items" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <div class="collapse navbar-collapse" id="nav-collapse-items" data-toggle="collapse" data-target="#nav-collapse-items">
-                <div class="navbar-nav ml-auto">
-                    <a href="#top" class="nav-item nav-link">
-                        Home
-                    </a>
-                    <a href="#portfolio" class="nav-item nav-link">
-                        Portfolio
-                    </a>
-                    <a href="#contact" class="nav-item nav-link">
-                        Contact
-                    </a>
-                </div>
-            </div>
-        </div> <!-- /.container -->
-    </nav>
-    
+@section('content')
     <!-- Main intro image & greeting -->
     <div id="landing" class="vert-center">
         <div class="container">
@@ -80,7 +32,7 @@
                 </p>
                 </section>
                 <section class="col-lg-4 col-md-5">
-                    <img src="{{ asset('img/avatar.jpg') }}" class="rounded-circle img-fluid" alt="Photo of Nicko J. Ruddock">
+                    <img src="{{ asset('images/avatar_2019.jpg') }}" class="rounded-circle img-fluid" alt="Photo of Nicko J. Ruddock">
                 </section>
             </article>
         </div>
@@ -98,85 +50,102 @@
         </div>
         
         <div class="row justify-content-center">
-            
-            <section class="col-lg-6 portfolio-sect">
-                <div class="card text-center">
-                    <a href="https://codepen.io/GingerNinjaNicko/full/MoMPam" target="_blank" rel="noopener" title="View code on Codepen">
-                        <img src="{{ asset('img/screenshots/tl_email.png') }}" alt="Screenshot of the 'Total Loss Email Generator'" class="card-img-top">
-                    </a>
-                    <div class="card-body">
-                        <h4 class="card-title">
-                            TL Email Generator
-                        </h4>
-                        <h6 class="card-subtitle text-muted">
-                            Killing complexity
-                        </h6>
-                        <hr class="divider">
-                        <p class="card-text">
-                            I love identifying problems and tackling them head on, which is why I tackled the complexity of total loss emails, creating this app to minimise user error. JavaScript is used to update the template in real time, activating the logic for calculations and adding legal text where necessary to create a comprehensive &amp; accurate document. The entire process takes around one minute compared to over five if written from scratch!
-						</p>
-						<a href="https://codepen.io/GingerNinjaNicko/full/MoMPam" title="View code on Codepen" target="_blank" rel="noopener">
-							<button class="btn btn-success" tabindex="-1">
-								<i class="fa fa-codepen" aria-hidden="true"></i>
-								View App
-							</button>
-						</a>
-                    </div>
-                </div>
-            </section>
-            
-            <section class="col-lg-6 portfolio-sect">
-                <div class="card text-center">
-                    <a href="https://codepen.io/GingerNinjaNicko/full/EvYzJQ" target="_blank" rel="noopener" title="View code on Codepen">
-                        <img src="{{ asset('img/screenshots/claims_journey.png') }}" alt="Screenshot of the 'Customer Journey Map'" class="card-img-top">
-                    </a>
-                    <div class="card-body">
-                        <h4 class="card-title">
-                            The Customer Journey Map
-                        </h4>
-                        <h6 class="card-subtitle text-muted">
-                            Interactive user experiences
-                        </h6>
-                        <hr class="divider">
-                        <p class="card-text">
-                            I am passionate about building fantastic user experiences which are responsive on all devices. For example, when I took my colleagues design for the ‘Motor Claims Journey’ and transformed it into an exciting user map with a mix of CSS animation, media queries and a touch of JavaScript to organise the data in a way that’s easy to follow. I've changed the data for demo purposes, but this app was a hit with higher management.
-						</p>
-						<a href="https://codepen.io/GingerNinjaNicko/full/EvYzJQ" title="View code on Codepen" target="_blank" rel="noopener">
-							<button class="btn btn-success" tabindex="-1">
-								<i class="fa fa-codepen" aria-hidden="true"></i>
-								View App
-							</button>
-						</a>
-                    </div>
-                </div>
-            </section>
-            
-            <section class="col-lg-6 portfolio-sect">
-                <div class="card text-center">
-                    <a href="http://NickoJRuddock.com" title="View webpage">
-                        <img src="{{ asset('img/screenshots/portfolio.png') }}" alt="Screenshot of Nicko's web portfolio" class="card-img-top">
-                    </a>
-                    <div class="card-body">
-                        <h4 class="card-title">
-                            Portfolio
-                        </h4>
-                        <h6 class="card-subtitle text-muted">
-                            Putting my stamp on the web
-                        </h6>
-                        <hr class="divider">
-                        <p class="card-text">
-                            For this page, I set myself a deadline to design &amp; build the entire site in just one week. To begin I thoroughly researched and designed my site before even touching the code because I find if I'm prepared then the development flows alot smoother. Since I knew I didn't have much time, I decided to utilise the latest version of <a href="https://getbootstrap.com">Bootstrap</a> to get me up and running in style as quick as possible.
-						</p>
-						<a href="http://NickoJRuddock.com" title="View webpage">
-							<button class="btn btn-success" tabindex="-1">
-								<i class="fa fa-link" aria-hidden="true"></i>
-								View App
-							</button>
-						</a>
-                    </div>
-                </div>
-            </section>
-            
+
+            @component('components.portfolio_card', [
+                'title' => 'Portfolio',
+                'subtitle' => 'Putting my stamp on the web',
+                'screenshotName' => 'portfolio.png',
+                'links' => [
+                    [
+                        'verb' => 'View',
+                        'source' => 'codepen',
+                        'url' => '/',
+                    ],
+                    [
+                        'verb' => 'Code',
+                        'source' => 'bitbucket',
+                        'url' => 'https://bitbucket.org/GingerNinjaNicko/laravel-portfolio/src/master/',
+                    ],
+                ]
+            ])
+                Transferring my portfolio over to a Laravel backend has improved speed, security &amp; enabled easier creation of my personal blog. I pushed to improve myself by hosting my new site on <a href="https://www.digitalocean.com/">Digital Ocean</a>. This meant researching Linux commands &amp; the joys of push-to-deploy with <a href="https://deployhq.com">DeployHQ</a> in the process. I see every project as a chance to push my knowledge further and as a result, my skill-set has broadened to encompass the complex world of DevOps.
+            @endcomponent
+
+            @component('components.portfolio_card', [
+                'title' => 'SN KAPAP',
+                'subtitle' => 'Supporting local business',
+                'screenshotName' => 'snkapap_screenshot.png',
+                'links' => [
+                    [
+                        'verb' => 'View',
+                        'source' => 'wordpress',
+                        'url' => 'https://snkapap.co.uk',
+                    ],
+                ]
+            ])
+                When <a href="https://snkapap.co.uk">SN KAPAP</a> were looking to create a website, I knew they needed was a simple Wordpress site with a professional yet friendly look. Wordpress allows just the right amount of content customisation for the client, whilst locking off the vital backend for myself to administrate. This website uses a pre-built theme with customisation to meet the client's exact specification. We continue to work together, looking to improve SEO and grow the club.
+            @endcomponent
+
+            @component('components.portfolio_card', [
+                'title' => 'Merch Manager',
+                'subtitle' => 'Keeping track',
+                'screenshotName' => 'merch_manager.png',
+                'links' => [
+                    [
+                        'verb' => 'View',
+                        'source' => 'codepen',
+                        'url' => route('examples.merch.index'),
+                    ],
+                    [
+                        'verb' => 'Code',
+                        'source' => 'bitbucket',
+                        'url' => 'https://bitbucket.org/GingerNinjaNicko/laravel-portfolio/src/master/',
+                    ],
+                ]
+            ])
+                Created as a proof of concept, managing merchandise became easy! Add new merch, edit & view exiting merch or delete merch you no longer stock. You can even update the stock by either adding, subtracting or setting an absolute amount. Built with Laravel & bootstrap as a bolt-on to this portfolio site as a way to demonstrate clean code and what's possible with the finesse of Laravel. You can <a href="https://bitbucket.org/GingerNinjaNicko/laravel-portfolio/src/master/">view the source code on BitBucket</a>.
+            @endcomponent
+
+            @component('components.portfolio_card', [
+                'title' => 'TL Email Generator',
+                'subtitle' => 'Killing complexity',
+                'screenshotName' => 'tl_email.png',
+                'links' => [
+                    [
+                        'verb' => 'View',
+                        'source' => 'codepen',
+                        'url' => 'https://codepen.io/GingerNinjaNicko/full/MoMPam',
+                    ],
+                    [
+                        'verb' => 'Code',
+                        'source' => 'codepen',
+                        'url' => 'https://codepen.io/GingerNinjaNicko/full/MoMPam',
+                    ],
+                ]
+            ])
+                I love identifying problems and tackling them head on, which is why I tackled the complexity of total loss emails, creating this app to minimise user error. JavaScript is used to update the template in real time, activating the logic for calculations and adding legal text where necessary to create a comprehensive &amp; accurate document. The entire process takes around one minute compared to over five if written from scratch!
+            @endcomponent
+
+            @component('components.portfolio_card', [
+                'title' => 'The Customer Journey Map',
+                'subtitle' => 'Interactive user experiences',
+                'screenshotName' => 'claims_journey.png',
+                'links' => [
+                    [
+                        'verb' => 'View',
+                        'source' => 'codepen',
+                        'url' => 'https://codepen.io/GingerNinjaNicko/full/EvYzJQ',
+                    ],
+                    [
+                        'verb' => 'Code',
+                        'source' => 'codepen',
+                        'url' => 'https://codepen.io/GingerNinjaNicko/full/EvYzJQ',
+                    ],
+                ]
+            ])
+                I am passionate about building fantastic user experiences which are responsive on all devices. For example, when I took my colleagues design for the ‘Motor Claims Journey’ and transformed it into an exciting user map with a mix of CSS animation, media queries and a touch of JavaScript to organise the data in a way that’s easy to follow. I've changed the data for demo purposes, but this app was a hit with higher management.
+            @endcomponent
+
         </div>
     </article>
 
@@ -228,24 +197,41 @@
                     <section class="col-md-6">
                         <!-- img source: https://pixabay.com/en/contact-visit-letters-email-mail-2794680/ -->
                         <div class="vert-center">
-                            <img src="{{ asset('img/contact-crop.png') }}" id="contact-img" class="img-fluid" alt="Flying mail image">
+                            <img src="{{ asset('images/contact-crop.png') }}" id="contact-img" class="img-fluid" alt="Flying mail image">
                         </div>
                     </section>
                 </div>
                 <div class="row">
-                    
+                    @component('components.alert', [
+                        'check' => session('message'),
+                        'type' => session('status') ?? 'success',
+                    ])
+                        {{ session('message') }}
+                    @endcomponent
+
+                    @component('components.alert', [
+                        'check' => $errors->any(),
+                        'type' => 'danger',
+                    ])
+                        <ul>
+                            @foreach ($errors->all() as $message)
+                                <li>{{ $message }}</li>
+                            @endforeach
+                        </ul>
+                    @endcomponent
+
                     <!-- Form submits to itself with no action tag if JavaScript disabled -->
                     <!-- Each input uses php to check whether field present in error array after submission & also to keep value after page reload  -->
                     <section class="col-12">
                         <form method="POST" action="{{ route('contact-us') }}" class="row">
                             @csrf
                             <div class="col-md-6">
-                                <input type="text" id="name" name="name" class="form-control form-control-lg" placeholder="Your name" aria-label="Your name">
-                                <input type="text" id="email" name="email" class="form-control form-control-lg" placeholder="Your email" aria-label="Your email">
+                                <input type="text" id="name" name="name" class="form-control form-control-lg" placeholder="Your name" aria-label="Your name" value="{{ old('name') }}">
+                                <input type="text" id="email" name="email" class="form-control form-control-lg" placeholder="Your email" aria-label="Your email" value="{{ old('email') }}">
                             </div>
                             
                             <div class="col-md-6">
-                                <textarea id="msg" name="msg" class="form-control form-control-lg" placeholder="Your message" aria-label="Your message"></textarea>
+                                <textarea id="message" name="message" class="form-control form-control-lg" placeholder="Your message" aria-label="Your message">{{ old('message') }}</textarea>
                             </div>
                             <label for="robot" class="d-none">
                                 Are you a Robot?
@@ -254,7 +240,7 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text">Are you a Robot?</span>
                                 </div>
-                                <input type="text" id="robot" name="robot" class="form-control" placeholder="Type 'no'">
+                                <input type="text" id="robot" name="robot" class="form-control" placeholder="Type 'no'" value="{{ old('robot') }}">
                             </div>
 
                             <div class="col-md-6">
@@ -266,27 +252,4 @@
             </section> <!-- ./col -->
         </div> <!-- ./row -->
     </article>
-    
-    <footer>
-        <div class="container">
-            <span>
-                Copyright &copy; {{ now()->year }} Nicko J. Ruddock
-            </span>
-        </div>
-    </footer>
-
-    <!-- Javascript files -->
-	<script defer
-		type="text/javascript" 
-		src="{{ mix('/js/app.js') }}">
-    </script>
-
-    @if ( session('status') )
-        <script>alert('{{ session('status') }}')</script>
-    @endif
-    @if ( $errors->any() )
-        <script>alert("{{ implode(', ', $errors->all() ) }}")</script>
-    @endif
-
-</body>
-</html>
+@endsection

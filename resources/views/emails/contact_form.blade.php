@@ -6,5 +6,5 @@ You have been sent a new email from NickoJRuddock.com
 **Email:** {{ $enquiry['email'] }}
 
 **Message:**<br>
-{{ $enquiry['msg'] }}
+{{ $enquiry['message'] }}
 @endcomponent
