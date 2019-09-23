@@ -22,13 +22,13 @@
                         <th>Stock</td>
                         <th>Show</th>
                     </tr>
-                    @foreach ($merch_items as $item)
+                    @foreach ($merch_items as $merch)
                         <tr>
-                            <td>{{ $item->name }}</td>
-                            <td>{{ $item->cost }}</td>
-                            <td>{{ $item->stock }}</td>
+                            <td>{{ $merch->name }}</td>
+                            <td>{{ $merch->cost }}</td>
+                            <td>{{ $merch->stock }}</td>
                             <td>
-                                <a href="{{ route('examples.merch.show', ['item' => $item->id]) }}">
+                                <a href="{{ route('examples.merch.show', ['merch' => $merch->id]) }}">
                                     Show Merch
                                 </a>
                             </td>
