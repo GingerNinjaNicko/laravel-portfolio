@@ -1,19 +1,10 @@
-@extends('layouts.app')
+@extends('examples.merch.layouts.merch')
 
 @section('title')
     Create Merch
 @endsection
 
-@section('content')
-    <div class="container">
-        <div class="jumbotron row">
-            <div class="col-sm-12 text-center">
-                <h1 class="display-3">
-                    Create Merch
-                </h1>
-            </div>
-        </div>
-    </div>
+@section('merch_content')
     <div class="container">
         <form action="{{ route('merch.store') }}" method="post">
             @csrf

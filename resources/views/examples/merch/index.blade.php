@@ -1,19 +1,10 @@
-@extends('layouts.app')
+@extends('examples.merch.layouts.merch')
 
 @section('title')
-    Merch
+    Our Merch
 @endsection
 
-@section('content')
-    <div class="container">
-        <div class="jumbotron row">
-            <div class="col-sm-12 text-center">
-                <h1 class="display-3">
-                    Our Merch
-                </h1>
-            </div>
-        </div>
-    </div>
+@section('merch_content')
     <div class="container">
         <div class="row">
             <a href="{{ route('merch.create') }}">
