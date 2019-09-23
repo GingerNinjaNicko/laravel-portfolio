@@ -65,3 +65,15 @@
         </div>
     @endif
 </form>
+
+@if (isset($action) && isset($merch->id))
+    <form action="{{ route('examples.merch.destroy', ['merch' => $merch]) }}" method="post">
+        @csrf
+        @method('DELETE')
+        <div class="form-group">
+            <button type="submit" class="btn btn-danger">
+                Delete Item
+            </button>
+        </div>
+    </form>
+@endif

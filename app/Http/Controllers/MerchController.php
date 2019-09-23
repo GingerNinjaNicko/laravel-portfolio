@@ -98,9 +98,15 @@ class MerchController extends Controller
      */
     public function destroy(Merch $merch)
     {
-        return redirect()->route('examples.merch.index')->with([
-            'status' => 'danger',
-            'message' => 'Route does not yet exist, please check back later...',
-        ]);
+        $merchName = $merch->name;
+
+        $merch->delete();
+
+        return redirect()
+            ->route('examples.merch.index')
+            ->with([
+                'message' => "\"{$merchName}\" successfully deleted",
+                'status' => 'danger',
+            ]);
     }
 }
