@@ -22,7 +22,7 @@
 
 
     <!-- Styles & assets -->
-    <link rel="icon" href="{{ asset('img/favicon.ico') }}"> 
+    <link rel="icon" href="{{ asset('images/favicon.ico') }}"> 
     <link rel="stylesheet" href="{{ mix('/css/app.css') }}">
 
     <!-- Javascript files -->
