@@ -22,7 +22,8 @@ class ContactUsController extends Controller
 
         // redirect with message
         return back()->with([
-            'status' => 'Email sent successfully'
+            'message' => 'Email sent successfully',
+            'status' => 'success',
         ]);
     }
 }

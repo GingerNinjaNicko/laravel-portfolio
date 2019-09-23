@@ -65,6 +65,14 @@
         </div> <!-- /.container -->
     </nav>
 
+    @if (session('message'))
+        <div class="container">
+            <div class="text-center alert alert-{{ session('status') ?? 'success' }}" role="alert">
+                {{ session('message') }}
+            </div>
+        </div>
+    @endif
+
     @yield('content')
 
     <footer>
@@ -75,9 +83,6 @@
         </div>
     </footer>
 
-    @if ( session('status') )
-        <script>alert('{{ session('status') }}')</script>
-    @endif
     @if ( $errors->any() )
         <script>alert("{{ implode(' ', $errors->all() ) }}")</script>
     @endif
