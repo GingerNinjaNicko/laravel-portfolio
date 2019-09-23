@@ -20,7 +20,7 @@ Route::post('/contact-us', 'ContactUsController@store')->name('contact-us');
 // Route::get('/home', 'HomeController@index')->name('home');
 
 Route::prefix('/examples')->group(function () {
-    Route::prefix('/merch')->name('merch.')->group(function () {
+    Route::prefix('/merch')->name('examples.merch.')->group(function () {
         Route::get('/', 'MerchController@index')->name('index');
         Route::get('/create', 'MerchController@create')->name('create');
         Route::post('/', 'MerchController@store')->name('store');

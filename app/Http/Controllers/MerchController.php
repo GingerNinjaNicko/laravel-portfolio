@@ -42,7 +42,7 @@ class MerchController extends Controller
         Merch::create($newMerch);
 
         return redirect()
-            ->route('merch.index')
+            ->route('examples.merch.index')
             ->with([
                 'message' => "{$newMerch['name']} created successfully",
                 'status' => 'success',
@@ -57,7 +57,7 @@ class MerchController extends Controller
      */
     public function show(Merch $merch)
     {
-        return redirect()->route('merch.index')->with([
+        return redirect()->route('examples.merch.index')->with([
             'status' => 'danger',
             'message' => 'Route does not yet exist, please check back later...',
         ]);
@@ -71,7 +71,7 @@ class MerchController extends Controller
      */
     public function edit(Merch $merch)
     {
-        return redirect()->route('merch.index')->with([
+        return redirect()->route('examples.merch.index')->with([
             'status' => 'danger',
             'message' => 'Route does not yet exist, please check back later...',
         ]);
@@ -86,7 +86,7 @@ class MerchController extends Controller
      */
     public function update(Request $request, Merch $merch)
     {
-        return redirect()->route('merch.index')->with([
+        return redirect()->route('examples.merch.index')->with([
             'status' => 'danger',
             'message' => 'Route does not yet exist, please check back later...',
         ]);
@@ -100,7 +100,7 @@ class MerchController extends Controller
      */
     public function destroy(Merch $merch)
     {
-        return redirect()->route('merch.index')->with([
+        return redirect()->route('examples.merch.index')->with([
             'status' => 'danger',
             'message' => 'Route does not yet exist, please check back later...',
         ]);

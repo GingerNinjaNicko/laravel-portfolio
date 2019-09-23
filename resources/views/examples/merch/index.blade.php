@@ -7,7 +7,7 @@
 @section('merch_content')
     <div class="container">
         <div class="row">
-            <a href="{{ route('merch.create') }}">
+            <a href="{{ route('examples.merch.create') }}">
                 <button type="button" class="btn btn-success">
                     Add New Item
                 </button>
@@ -28,7 +28,7 @@
                             <td>{{ $item->cost }}</td>
                             <td>{{ $item->stock }}</td>
                             <td>
-                                <a href="{{ route('merch.show', ['item' => $item->id]) }}">
+                                <a href="{{ route('examples.merch.show', ['item' => $item->id]) }}">
                                     Show Merch
                                 </a>
                             </td>
