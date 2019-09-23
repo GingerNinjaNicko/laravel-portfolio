@@ -150,7 +150,7 @@
                             </div>
                             
                             <div class="col-md-6">
-                                <textarea id="msg" name="msg" class="form-control form-control-lg" placeholder="Your message" aria-label="Your message">{{ old('msg') }}</textarea>
+                                <textarea id="message" name="message" class="form-control form-control-lg" placeholder="Your message" aria-label="Your message">{{ old('message') }}</textarea>
                             </div>
                             <label for="robot" class="d-none">
                                 Are you a Robot?

@@ -28,7 +28,7 @@ class ContactUsRequest extends FormRequest
         return [
             'name' => 'required|string',
             'email' => 'required|email',
-            'msg' => 'required|string',
+            'message' => 'required|string',
             'robot' => 'required|in:no,No,Nope,nope',
         ];
     }
