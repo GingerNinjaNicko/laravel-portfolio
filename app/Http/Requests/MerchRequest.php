@@ -24,7 +24,6 @@ class MerchRequest extends FormRequest
     public function rules()
     {
         return [
-            'id' => 'sometimes|required|integer',
             'name' => 'required|string|max:255',
             'cost' => 'required|integer|between:0,65535',
             'stock' => 'required|integer|between:0,65535',
