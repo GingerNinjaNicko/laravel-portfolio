@@ -8,7 +8,7 @@
     <div class="container">
         @component('examples.merch.components.merch_form', [
             'action' => route('examples.merch.store'),
-            'method' => 'post'
+            'method' => 'POST'
         ])
         @endcomponent
     </div>
