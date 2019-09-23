@@ -72,7 +72,7 @@
                 'screenshotName' => 'claims_journey.png',
                 'link' => 'https://codepen.io/GingerNinjaNicko/full/EvYzJQ',
             ])
-                I am passionate about building fantastic user experiences which are responsive on all devices. For example, when I took my colleagues design for the ‘Motor Claims Journey’ and transformed it into an exciting user map with a mix of CSS animation, media queries and a touch of JavaScript to organise the data in a way that’s easy to follow. I\'ve changed the data for demo purposes, but this app was a hit with higher management.
+                I am passionate about building fantastic user experiences which are responsive on all devices. For example, when I took my colleagues design for the ‘Motor Claims Journey’ and transformed it into an exciting user map with a mix of CSS animation, media queries and a touch of JavaScript to organise the data in a way that’s easy to follow. I've changed the data for demo purposes, but this app was a hit with higher management.
             @endcomponent
             @component('components.portfolio_card', [
                 'title' => 'Portfolio',
@@ -80,7 +80,7 @@
                 'screenshotName' => 'portfolio.png',
                 'link' => '/',
             ])
-                For this page, I set myself a deadline to design &amp; build the entire site in just one week. To begin I thoroughly researched and designed my site before even touching the code because I find if I\'m prepared then the development flows alot smoother. Since I knew I didn\'t have much time, I decided to utilise the latest version of <a href="https://getbootstrap.com">Bootstrap</a> to get me up and running in style as quick as possible.
+                For this page, I set myself a deadline to design &amp; build the entire site in just one week. To begin I thoroughly researched and designed my site before even touching the code because I find if I'm prepared then the development flows alot smoother. Since I knew I didn't have much time, I decided to utilise the latest version of <a href="https://getbootstrap.com">Bootstrap</a> to get me up and running in style as quick as possible.
             @endcomponent
         </div>
     </article>
