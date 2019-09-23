@@ -32,7 +32,7 @@
                 </p>
                 </section>
                 <section class="col-lg-4 col-md-5">
-                    <img src="{{ asset('images/avatar.jpg') }}" class="rounded-circle img-fluid" alt="Photo of Nicko J. Ruddock">
+                    <img src="{{ asset('images/avatar_2019.jpg') }}" class="rounded-circle img-fluid" alt="Photo of Nicko J. Ruddock">
                 </section>
             </article>
         </div>
