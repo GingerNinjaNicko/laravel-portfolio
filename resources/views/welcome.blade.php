@@ -50,68 +50,30 @@
         </div>
         
         <div class="row justify-content-center">
-            
             @component('components.portfolio_card', [
                 'title' => 'TL Email Generator',
                 'subtitle' => 'Killing complexity',
                 'screenshotName' => 'tl_email.png',
                 'link' => 'https://codepen.io/GingerNinjaNicko/full/MoMPam',
-                'text' => 'I love identifying problems and tackling them head on, which is why I tackled the complexity of total loss emails, creating this app to minimise user error. JavaScript is used to update the template in real time, activating the logic for calculations and adding legal text where necessary to create a comprehensive &amp; accurate document. The entire process takes around one minute compared to over five if written from scratch!',
             ])
+                I love identifying problems and tackling them head on, which is why I tackled the complexity of total loss emails, creating this app to minimise user error. JavaScript is used to update the template in real time, activating the logic for calculations and adding legal text where necessary to create a comprehensive &amp; accurate document. The entire process takes around one minute compared to over five if written from scratch!
             @endcomponent
-            
-            <section class="col-lg-6 portfolio-sect">
-                <div class="card text-center">
-                    <a href="https://codepen.io/GingerNinjaNicko/full/EvYzJQ" target="_blank" rel="noopener" title="View code on Codepen">
-                        <img src="{{ asset('images/screenshots/claims_journey.png') }}" alt="Screenshot of the 'Customer Journey Map'" class="card-img-top">
-                    </a>
-                    <div class="card-body">
-                        <h4 class="card-title">
-                            The Customer Journey Map
-                        </h4>
-                        <h6 class="card-subtitle text-muted">
-                            Interactive user experiences
-                        </h6>
-                        <hr class="divider">
-                        <p class="card-text">
-                            I am passionate about building fantastic user experiences which are responsive on all devices. For example, when I took my colleagues design for the ‘Motor Claims Journey’ and transformed it into an exciting user map with a mix of CSS animation, media queries and a touch of JavaScript to organise the data in a way that’s easy to follow. I've changed the data for demo purposes, but this app was a hit with higher management.
-						</p>
-						<a href="https://codepen.io/GingerNinjaNicko/full/EvYzJQ" title="View code on Codepen" target="_blank" rel="noopener">
-							<button class="btn btn-success" tabindex="-1">
-								<i class="fa fa-codepen" aria-hidden="true"></i>
-								View App
-							</button>
-						</a>
-                    </div>
-                </div>
-            </section>
-            
-            <section class="col-lg-6 portfolio-sect">
-                <div class="card text-center">
-                    <a href="http://NickoJRuddock.com" title="View webpage">
-                        <img src="{{ asset('images/screenshots/portfolio.png') }}" alt="Screenshot of Nicko's web portfolio" class="card-img-top">
-                    </a>
-                    <div class="card-body">
-                        <h4 class="card-title">
-                            Portfolio
-                        </h4>
-                        <h6 class="card-subtitle text-muted">
-                            Putting my stamp on the web
-                        </h6>
-                        <hr class="divider">
-                        <p class="card-text">
-                            For this page, I set myself a deadline to design &amp; build the entire site in just one week. To begin I thoroughly researched and designed my site before even touching the code because I find if I'm prepared then the development flows alot smoother. Since I knew I didn't have much time, I decided to utilise the latest version of <a href="https://getbootstrap.com">Bootstrap</a> to get me up and running in style as quick as possible.
-						</p>
-						<a href="http://NickoJRuddock.com" title="View webpage">
-							<button class="btn btn-success" tabindex="-1">
-								<i class="fa fa-link" aria-hidden="true"></i>
-								View App
-							</button>
-						</a>
-                    </div>
-                </div>
-            </section>
-            
+            @component('components.portfolio_card', [
+                'title' => 'The Customer Journey Map',
+                'subtitle' => 'Interactive user experiences',
+                'screenshotName' => 'claims_journey.png',
+                'link' => 'https://codepen.io/GingerNinjaNicko/full/EvYzJQ',
+            ])
+                I am passionate about building fantastic user experiences which are responsive on all devices. For example, when I took my colleagues design for the ‘Motor Claims Journey’ and transformed it into an exciting user map with a mix of CSS animation, media queries and a touch of JavaScript to organise the data in a way that’s easy to follow. I\'ve changed the data for demo purposes, but this app was a hit with higher management.
+            @endcomponent
+            @component('components.portfolio_card', [
+                'title' => 'Portfolio',
+                'subtitle' => 'Putting my stamp on the web',
+                'screenshotName' => 'portfolio.png',
+                'link' => '/',
+            ])
+                For this page, I set myself a deadline to design &amp; build the entire site in just one week. To begin I thoroughly researched and designed my site before even touching the code because I find if I\'m prepared then the development flows alot smoother. Since I knew I didn\'t have much time, I decided to utilise the latest version of <a href="https://getbootstrap.com">Bootstrap</a> to get me up and running in style as quick as possible.
+            @endcomponent
         </div>
     </article>
 
