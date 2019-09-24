@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Merch;
-use Illuminate\Http\Request;
 use App\Http\Requests\MerchRequest;
+use Illuminate\Support\Arr;
 
 class MerchController extends Controller
 {
@@ -82,6 +82,12 @@ class MerchController extends Controller
     {
         $newMerch = $request->validated();
 
+        $stock = Arr::pull($newMerch, 'stock');
+        $stockType = Arr::pull($newMerch, 'stock-type');
+
+        $stockFunction = $stockType . 'Stock';
+
+        $merch->{$stockFunction}($stock);
         $merch->update($newMerch);
 
         return back()->with([
