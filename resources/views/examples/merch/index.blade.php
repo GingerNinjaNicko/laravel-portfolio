@@ -17,10 +17,10 @@
             <div class="table-responsive">
                 <table class="table table-bordered table-hover">
                     <tr>
-                        <th>Name</td>
-                        <th>Cost</td>
-                        <th>Stock</td>
-                        <th>Show</th>
+                        <th>Name</th>
+                        <th>Cost</th>
+                        <th>Stock</th>
+                        <th></th>
                     </tr>
                     @foreach ($merch_items as $merch)
                         <tr>
@@ -28,9 +28,21 @@
                             <td>£{{ $merch->cost }}</td>
                             <td>{{ $merch->stock }}</td>
                             <td>
-                                <a href="{{ route('examples.merch.show', ['merch' => $merch]) }}">
-                                    <button class="btn btn-primary">Show</button>
-                                </a>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Action
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item"
+                                            href="{{ route('examples.merch.show', ['merch' => $merch]) }}">
+                                            Show
+                                        </a>
+                                        <a class="dropdown-item"
+                                            href="{{ route('examples.merch.edit', ['merch' => $merch]) }}">
+                                            Edit
+                                        </a>
+                                    </div>
+                                </div>
                             </td>
                         </tr>
                     @endforeach

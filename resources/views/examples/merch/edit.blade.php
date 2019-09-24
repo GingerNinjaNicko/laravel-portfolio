@@ -1,7 +1,7 @@
 @extends('examples.merch.layouts.merch')
 
 @section('title')
-    Create Merch
+    Edit Merch
 @endsection
 
 @section('merch_content')

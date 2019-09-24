@@ -27,4 +27,19 @@ class Merch extends Model
         'cost' => 'integer',
         'stock' => 'integer',
     ];
+
+    public function exactlyStock($stock)
+    {
+        $this->stock = $stock;
+    }
+
+    public function addStock($stock)
+    {
+        $this->stock += $stock;
+    }
+
+    public function subtractStock($stock)
+    {
+        $this->stock -= $stock;
+    }
 }
