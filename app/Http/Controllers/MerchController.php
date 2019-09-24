@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Merch;
-use Illuminate\Http\Request;
 use App\Http\Requests\MerchRequest;
 use Illuminate\Support\Arr;
 
