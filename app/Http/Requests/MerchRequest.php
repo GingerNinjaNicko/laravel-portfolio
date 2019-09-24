@@ -27,6 +27,7 @@ class MerchRequest extends FormRequest
             'name' => 'required|string|max:255',
             'cost' => 'required|integer|between:0,65535',
             'stock' => 'required|integer|between:0,65535',
+            'stock-type' => 'sometimes|required|in:exactly,add,subtract'
         ];
     }
 }
