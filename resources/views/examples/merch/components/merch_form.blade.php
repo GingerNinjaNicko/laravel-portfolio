@@ -4,7 +4,7 @@
         @method($method)
     @endif
 
-    <div class="form-group row">
+    <div class="form-group form-row">
         <label for="name" class="col-sm-2 col-form-label">
             Name
         </label>
@@ -19,7 +19,7 @@
         </div>
     </div>
 
-    <div class="form-group row">
+    <div class="form-group form-row">
         <label for="cost" class="col-sm-2 col-form-label">
             Cost
         </label>
@@ -37,7 +37,7 @@
         </div>
     </div>
 
-    <div class="form-group row">
+    <div class="form-group form-row">
         <label for="stock" class="col-sm-2 col-form-label">
             Stock
         </label>
