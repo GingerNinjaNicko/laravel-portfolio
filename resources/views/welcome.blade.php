@@ -58,7 +58,7 @@
                 'links' => [
                     [
                         'verb' => 'View',
-                        'source' => 'codepen',
+                        'source' => 'laravel',
                         'url' => '/',
                     ],
                     [
@@ -93,7 +93,7 @@
                 'links' => [
                     [
                         'verb' => 'View',
-                        'source' => 'codepen',
+                        'source' => 'laravel',
                         'url' => route('examples.merch.index'),
                     ],
                     [
@@ -119,7 +119,7 @@
                     [
                         'verb' => 'Code',
                         'source' => 'codepen',
-                        'url' => 'https://codepen.io/GingerNinjaNicko/full/MoMPam',
+                        'url' => 'https://codepen.io/GingerNinjaNicko/pen/MoMPam',
                     ],
                 ]
             ])
@@ -139,7 +139,7 @@
                     [
                         'verb' => 'Code',
                         'source' => 'codepen',
-                        'url' => 'https://codepen.io/GingerNinjaNicko/full/EvYzJQ',
+                        'url' => 'https://codepen.io/GingerNinjaNicko/pen/EvYzJQ',
                     ],
                 ]
             ])
