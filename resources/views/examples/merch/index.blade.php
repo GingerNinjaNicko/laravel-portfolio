@@ -17,9 +17,9 @@
             <div class="table-responsive">
                 <table class="table table-bordered table-hover">
                     <tr>
-                        <th>Name</td>
-                        <th>Cost</td>
-                        <th>Stock</td>
+                        <th>Name</th>
+                        <th>Cost</th>
+                        <th>Stock</th>
                         <th>Show</th>
                     </tr>
                     @foreach ($merch_items as $merch)
