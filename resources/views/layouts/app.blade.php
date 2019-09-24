@@ -30,8 +30,6 @@
     type="text/javascript" 
     src="{{ mix('/js/app.js') }}">
     </script>
-    <!-- Font awesome -->
-    <script async src="https://use.fontawesome.com/ab45073717.js"></script>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="0">
     
