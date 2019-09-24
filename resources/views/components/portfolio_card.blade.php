@@ -17,7 +17,7 @@
             @foreach ($links as $link)
                 <a href="{{ $link['url'] }}" title="View it on {{ $link['source'] }}">
                     <button class="btn btn-success" tabindex="-1">
-                        <i class="fa fa-{{ $link['source'] }}" aria-hidden="true"></i>
+                        <i class="fab fa-{{ $link['source'] }}" aria-hidden="true"></i>
                         {{ $link['verb'] }}
                     </button>
                 </a>

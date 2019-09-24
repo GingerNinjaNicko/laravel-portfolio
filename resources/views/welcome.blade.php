@@ -25,7 +25,7 @@
                     <p>
 					<a href="#contact">
 						<button class="btn btn-success btn-lg" tabindex="-1">
-							<i class="fa fa-envelope" aria-hidden="true"></i>
+							<i class="fas fa-envelope" aria-hidden="true"></i>
 							Contact me
 						</button>
 					</a>
@@ -58,7 +58,7 @@
                 'links' => [
                     [
                         'verb' => 'View',
-                        'source' => 'codepen',
+                        'source' => 'laravel',
                         'url' => '/',
                     ],
                     [
@@ -93,7 +93,7 @@
                 'links' => [
                     [
                         'verb' => 'View',
-                        'source' => 'codepen',
+                        'source' => 'laravel',
                         'url' => route('examples.merch.index'),
                     ],
                     [
@@ -119,7 +119,7 @@
                     [
                         'verb' => 'Code',
                         'source' => 'codepen',
-                        'url' => 'https://codepen.io/GingerNinjaNicko/full/MoMPam',
+                        'url' => 'https://codepen.io/GingerNinjaNicko/pen/MoMPam',
                     ],
                 ]
             ])
@@ -139,7 +139,7 @@
                     [
                         'verb' => 'Code',
                         'source' => 'codepen',
-                        'url' => 'https://codepen.io/GingerNinjaNicko/full/EvYzJQ',
+                        'url' => 'https://codepen.io/GingerNinjaNicko/pen/EvYzJQ',
                     ],
                 ]
             ])
@@ -169,26 +169,26 @@
                             </p>
                             <p>
                                 <a href="https://codepen.io/GingerNinjaNicko/" target="_blank" rel="noopener" aria-label="Visit my Codepen page">
-                                    <i title="Visit my Codepen page" class="fa fa-codepen" aria-hidden="true"></i>
+                                    <i title="Visit my Codepen page" class="fab fa-codepen" aria-hidden="true"></i>
                                 </a>
                                 <a href="https://bitbucket.org/GingerNinjaNicko" target="_blank" rel="noopener" aria-label="Visit my Bitbucket page">
-                                    <i title="Visit my Bitbucket page" class="fa fa-bitbucket" aria-hidden="true"></i>
+                                    <i title="Visit my Bitbucket page" class="fab fa-bitbucket" aria-hidden="true"></i>
                                 </a>
                                 <!--
                                 <a href="https://github.com/GingerNinjaNicko" target="_blank" rel="noopener" aria-label="Visit my Github page">
-                                    <i title="Visit my Github page" class="fa fa-github" aria-hidden="true"></i>
+                                    <i title="Visit my Github page" class="fab fa-github" aria-hidden="true"></i>
                                 </a>
                                 -->
                                 <!--
                                 <a href="https://medium.com/@GingerNinjaNick" target="_blank" rel="noopener" aria-label="Visit my Medium page">
-                                    <i title="Visit my Medium page" class="fa fa-medium" aria-hidden="true"></i>
+                                    <i title="Visit my Medium page" class="fab fa-medium" aria-hidden="true"></i>
                                 </a>
                                 -->
                                 <a href="https://www.linkedin.com/in/GingerNinjaNicko/" target="_blank" rel="noopener" aria-label="Visit my Linkedin page">
-                                    <i title="Visit my Linkedin page" class="fa fa-linkedin-square" aria-hidden="true"></i>
+                                    <i title="Visit my Linkedin page" class="fab fa-linkedin" aria-hidden="true"></i>
                                 </a>
                                 <a href="https://www.facebook.com/GingerNinjaNicko" target="_blank" rel="noopener" aria-label="Visit my Facebook page">
-                                    <i title="Visit my Facebook page" class="fa fa-facebook-official" aria-hidden="true"></i>
+                                    <i title="Visit my Facebook page" class="fab fa-facebook-square" aria-hidden="true"></i>
                                 </a>
                             </p>
                         </div>
