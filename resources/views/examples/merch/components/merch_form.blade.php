@@ -41,7 +41,19 @@
         <label for="stock" class="col-sm-2 col-form-label">
             Stock
         </label>
-        <div class="col-sm-10">
+        @if (isset($action) && isset($merch->id))
+            <label for="stock-type" class="sr-only">
+                Amend stock type
+            </label>
+            <div class="col-sm-2">
+                <select class="custom-select" name="stock-type">
+                    <option selected value="exactly">Exactly</option>
+                    <option value="add">Add</option>
+                    <option value="subtract">Subtract</option>
+                </select>
+            </div>
+        @endif
+        <div class="col">
             <input type="number"
                 min="0" max="65535"
                 class="form-control"
