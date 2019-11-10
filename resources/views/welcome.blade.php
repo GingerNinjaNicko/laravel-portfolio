@@ -54,7 +54,7 @@
             @component('components.portfolio_card', [
                 'title' => 'Portfolio',
                 'subtitle' => 'Putting my stamp on the web',
-                'screenshotName' => 'portfolio.png',
+                'screenshotName' => 'portfolio-2019.png',
                 'links' => [
                     [
                         'verb' => 'View',
