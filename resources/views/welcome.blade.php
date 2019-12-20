@@ -228,6 +228,7 @@
                             <div class="col-md-6">
                                 <input type="text" id="name" name="name" class="form-control form-control-lg" placeholder="Your name" aria-label="Your name" value="{{ old('name') }}">
                                 <input type="text" id="email" name="email" class="form-control form-control-lg" placeholder="Your email" aria-label="Your email" value="{{ old('email') }}">
+                                <input type="text" id="emailConfirm" name="emailConfirm" style="display: none;">
                             </div>
                             
                             <div class="col-md-6">
