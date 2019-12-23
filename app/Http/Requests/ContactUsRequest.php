@@ -42,7 +42,7 @@ class ContactUsRequest extends FormRequest
     public function messages()
     {
         return [
-            'emailConfirm.size' => '',
+            'emailConfirm.size' => 'Please complete all fields',
             'robot.required' => 'Please confirm you are not a robot',
             'robot.in' => 'Please confirm you are not a robot',
         ];
