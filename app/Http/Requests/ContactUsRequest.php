@@ -46,4 +46,24 @@ class ContactUsRequest extends FormRequest
             'robot.in' => 'Please confirm you are not a robot',
         ];
     }
+    
+    /**
+     * Overwrite base - Handle a failed validation attempt.
+     *
+     * @param  \Illuminate\Contracts\Validation\Validator  $validator
+     * @return void
+     *
+     * @throws \Illuminate\Validation\ValidationException
+     */
+    protected function failedValidation(Validator $validator)
+    {
+        if ($validator->errors()->get('emailTwo')) {
+            throw (new ValidationException($validator))
+                        ->redirectTo($this->getRedirectUrl());
+        }
+
+        throw (new ValidationException($validator))
+                    ->errorBag($this->errorBag)
+                    ->redirectTo($this->getRedirectUrl());
+    }
 }
