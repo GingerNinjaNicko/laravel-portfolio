@@ -28,7 +28,7 @@ class ContactUsRequest extends FormRequest
         return [
             'name' => 'required|string',
             'email' => 'required|email',
-            'emailConfirm' => 'size:0',
+            'emailConfirm' => 'bail|size:0',
             'message' => 'required|string',
             'robot' => 'required|in:no,No,Nope,nope',
         ];
@@ -42,28 +42,9 @@ class ContactUsRequest extends FormRequest
     public function messages()
     {
         return [
+            'emailConfirm.size' => '',
             'robot.required' => 'Please confirm you are not a robot',
             'robot.in' => 'Please confirm you are not a robot',
         ];
-    }
-    
-    /**
-     * Overwrite base - Handle a failed validation attempt.
-     *
-     * @param  \Illuminate\Contracts\Validation\Validator  $validator
-     * @return void
-     *
-     * @throws \Illuminate\Validation\ValidationException
-     */
-    protected function failedValidation(Validator $validator)
-    {
-        if ($validator->errors()->get('emailTwo')) {
-            throw (new ValidationException($validator))
-                        ->redirectTo($this->getRedirectUrl());
-        }
-
-        throw (new ValidationException($validator))
-                    ->errorBag($this->errorBag)
-                    ->redirectTo($this->getRedirectUrl());
     }
 }
