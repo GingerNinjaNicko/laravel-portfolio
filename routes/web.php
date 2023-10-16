@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Routing\Route;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -11,22 +13,22 @@
 |
 */
 
-Route::get('/', 'WelcomeController')->name('welcome');
+Route::view('/', 'welcome')->name('welcome');
 
-Route::post('/contact-us', 'ContactUsController@store')->name('contact-us');
+Route::post('/contact-us', [ContactUsController::class, 'store'])->name('contact-us');
 
 // Auth::routes();
 
-// Route::get('/home', 'HomeController@index')->name('home');
+// Route::get('/home', [HomeController::class, 'index'])->name('home');
 
 Route::prefix('/examples')->group(function () {
     Route::prefix('/merch')->name('examples.merch.')->group(function () {
-        Route::get('/', 'MerchController@index')->name('index');
-        Route::get('/create', 'MerchController@create')->name('create');
-        Route::post('/', 'MerchController@store')->name('store');
-        Route::get('/{merch}', 'MerchController@show')->name('show');
-        Route::get('/{merch}/edit', 'MerchController@edit')->name('edit');
-        Route::put('/{merch}', 'MerchController@update')->name('update');
-        Route::delete('/{merch}', 'MerchController@destroy')->name('destroy');
+        Route::get('/', [MerchController::class, 'index'])->name('index');
+        Route::get('/create', [MerchController::class, 'create'])->name('create');
+        Route::post('/', [MerchController::class, 'store'])->name('store');
+        Route::get('/{merch}', [MerchController::class, 'show'])->name('show');
+        Route::get('/{merch}/edit', [MerchController::class, 'edit'])->name('edit');
+        Route::put('/{merch}', [MerchController::class, 'update'])->name('update');
+        Route::delete('/{merch}', [MerchController::class, 'destroy'])->name('destroy');
     });
 });
